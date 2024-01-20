@@ -49,7 +49,7 @@ export default function AddProductPage() {
           required
           name="imageUrl"
           placeholder="Image URL"
-          type="string"
+          type="url"
           className="input-bordered input mb-3 w-full"
         />
         <input
