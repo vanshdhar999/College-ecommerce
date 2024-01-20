@@ -1,8 +1,17 @@
 // src/app/page.js
 import React from 'react';
 import DefaultLayout from './layout';
+import { Link } from 'react-router-dom';
+import ItemDetails from './itemdetails'; // Import the ItemDetails component
 
 const LandingPage = () => {
+// Sample data for the added cycle item
+  const cycleItem = {
+    id: '1',
+    category: 'cycle',
+    price: 3000,
+    images: ['/public/side.jpeg'], 
+  };  
   return (
     <DefaultLayout>
       <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
@@ -45,12 +54,23 @@ const LandingPage = () => {
           Find and sell items with ease. Explore a variety of items listed by college students.
         </p>
         {/* Central body content */}
-        <div className="mt-8">
-          {/* My Items section */}
-          <h2 className="text-2xl font-semibold mb-4">My Items</h2>
-          {/* Display user's items here */}
-          <p>No items listed yet.</p>
+        {/* Display the added cycle item */}
+        <div className="grid grid-cols-2 gap-8">
+          {cycleItem.images.map((image, index) => (
+            <img key={index} src={image} alt={`Item ${index + 1}`} className="w-full mb-2" />
+          ))}
+
+          <div className="col-span-2 mb-4">
+            <p className="text-lg mb-2">{`Category: ${cycleItem.category}`}</p>
+            <p className="text-lg mb-2">{`Price: $${cycleItem.price}`}</p>
+            {/* Add a Link to the item details page */}
+            <Link to={`/item/${cycleItem.id}`} className="text-blue-500 hover:underline">
+              View Details
+            </Link>
+          </div>
         </div>
+
+
       </main>
       <footer className="p-4 bg-gray-800 text-white text-center">
         {/* FAQ section in the footer */}

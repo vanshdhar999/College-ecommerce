@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './page';
-import ItemDetails from './ItemDetails';
+import ItemDetails from './itemdetails';
 
 const App = () => {
   return (
