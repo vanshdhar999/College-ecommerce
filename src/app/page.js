@@ -1,7 +1,8 @@
 // src/app/page.js
 import React from 'react';
 import DefaultLayout from './layout';
-import ItemDetails from './itemdetailstemdetails'; // Import the ItemDetails component
+import { Link } from 'react-router-dom';
+import ItemDetails from './itemdetails'; // Import the ItemDetails component
 
 const LandingPage = () => {
 // Sample data for the added cycle item
