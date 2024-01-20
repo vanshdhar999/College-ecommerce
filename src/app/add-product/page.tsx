@@ -16,6 +16,7 @@ async function addProduct(formData: FormData) {
     const price = Number(formData.get("price") || 0);
     const tag = formData.get("tag")?.toString();
 
+
     if (!name || !description || !imageUrl || !price || !tag) {
         throw Error("Missing required fields");
       }
@@ -26,7 +27,6 @@ async function addProduct(formData: FormData) {
     
       redirect("/");
     }
-
 
 export default function AddProductPage() {
   return (
