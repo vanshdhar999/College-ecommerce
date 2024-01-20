@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+    title : "Add product - CollegeBay"
+}
+
 export default function AddProductPage() {
   return (
     <div>
@@ -39,6 +43,7 @@ export default function AddProductPage() {
           className="input-bordered input mb-3 w-full"
         />
         {/* Additional fields can be added as needed */}
+        <button className = "btn btn-primary btn-block" type = "submit"> Add Product </button>
       </form>
     </div>
   );
