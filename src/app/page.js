@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 // src/app/page.js
 import React from 'react';
 import DefaultLayout from './layout';
@@ -9,12 +8,12 @@ const LandingPage = () => {
     <DefaultLayout>
       <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
         <div className="flex items-center">
-        <Image
-  src="/logo.png" // Provide the correct path to your image
-  alt="Your Alt Text"
-  width={100} // Set the desired width
-  height={50} // Set the desired height
-/>
+          <Image
+            src="/logo.png"
+            alt="College Marketplace Logo"
+            width={100}
+            height={50}
+          />
           <h1 className="text-lg font-bold">College Marketplace</h1>
         </div>
         <div className="flex items-center space-x-4">
@@ -50,12 +49,7 @@ const LandingPage = () => {
           Find and sell items with ease. Explore a variety of items listed by college students.
         </p>
         {/* Central body content */}
-        <div className="mt-8">
-          {/* My Items section */}
-          <h2 className="text-2xl font-semibold mb-4">My Items</h2>
-          {/* Display user's items here */}
-          <p>No items listed yet.</p>
-        </div>
+        {/* You can add any new sections or content here as needed */}
       </main>
       <footer className="p-4 bg-gray-800 text-white text-center">
         {/* FAQ section in the footer */}
