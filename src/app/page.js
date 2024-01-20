@@ -9,7 +9,7 @@ const LandingPage = () => {
     id: '1',
     category: 'cycle',
     price: 3000,
-    images: ['/public/cycle_image.jpg'], // Replace 'cycle_image.jpg' with the actual filename
+    images: ['/public/side.jpeg'], 
   };  
   return (
     <DefaultLayout>
