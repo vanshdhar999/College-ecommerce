@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CollegeBay
 
-## Getting Started
+Empowering student communities through a unique e-commerce platform. Buy and sell with ease as college students connect to exchange products within their community. Affordable essentials for every student, fostering a culture of support and accessibility.
 
-First, run the development server:
+## App Setup (localhost)
+
+Install node.js compatible with your system from the website . 
+```bash
+ https://nodejs.org/en/download
+  ```
+
+  Check the version of your node.js and npm on command prompt.
+  
+  ```bash
+ node -v
+npm -v
+  ```
+Getting output as below means you have succesfully installed node and npm .
+
+![App Screenshot](public/npm.png?text=App+Screenshot+Here)
+
+
+Open a Directory of your choice on the system and clone the Github repository via running the code on git-bash .
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ git clone https://github.com/vanshdhar999/College-ecommerce
+  ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Looks like this while execution 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![App Screenshot](public/glone.png?text=App+Screenshot+Here)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployement 
+After cloning, open the folder in VS-Code and Run the following command
+```bash
+ npm run dev
+  ```
+Something like this will appear 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![App Screenshot](public/host.png?text=App+Screenshot+Here)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Go to http://localhost:3000 on your browser to see the result .
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Environment Variables 
+DATABASE_URL="..." // Put your Database URL here . 
+
+GOOGLE_CLIENT_ID = "..." // Put Google_Client_Id here .
+
+GOOGLE_CLIENT_SECRET = "..." // Put your Google_Client_Secret here
+
+NEXTAUTH_URL = "..." // put your NextAuth URL here .
+
+NEXTAUTH_SECRET = "..." // put your NextAuth Secret here .
+
+## Features 
+
+
+1. User Authentication : Seamless Authentication of the user via OAuth .
+
+2. User Management : The Data of Users is managed effortlessly on MongoDB , that is accessible from anywhere .
+
+3. Responsive Design : Website works well on different desktop screen sizes. 
+
+
+4. Search Functionality: Search bar on the top is case insensitive and searches the underlying database .
+Ensure fast and efficient search performance, minimizing latency in delivering results.
+
+5. Content Management: User can interact with the website and add items for sale on the website .
+
+6. Database Integration: MongoDB allows the admin to access database from anywhere . Fetching data from database is fast and efficient .
+
+7. API Integration: OAuth 2.0 from the Google API Console is integrated .
+
+
+
+
+
+
+
+
+
+
+
+## Technologies Used
+
+Client side - Next.js , TailwindCSS , TypeScript , DaisyUI 
+
+Server side - Node.js , Prisma , TypeScript , MongoDB , NextAuth.js , OAuth Google
+
+## Documentation
+
+Next.js - https://nextjs.org/docs
+
+TailwindCSS - https://v2.tailwindcss.com/docs
+
+TypeScript - https://www.typescriptlang.org/docs/
+
+MongoDB - https://www.mongodb.com/docs/
+
+DaisyUI - https://daisyui.com/
+
+Node.js - https://nodejs.org/docs/latest/api/
+
+Prisma - https://www.prisma.io/docs
+
+NextAuth.js - https://next-auth.js.org/
+
+OAuth Google - https://developers.google.com/identity/protocols/oauth2
+
+## feedback -- link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
