@@ -33,7 +33,7 @@ export default async function Navbar() {
             <div className="form-control">
               <input
                 name="searchQuery"
-                placeholder="Search"
+                placeholder="Search Item"
                 className="input-bordered input w-full min-w-[100px]"
               />
             </div>

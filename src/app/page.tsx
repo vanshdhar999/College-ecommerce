@@ -30,8 +30,6 @@ export default async function Home() {
 
             {/* Right Section */}
             <div className=" gap-2 flex items-center">
-              {/* Login Button */}
-              <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Login</button>
               {/* My Account Link */}
               <Link href="/MyAccount" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                 My Account
