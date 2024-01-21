@@ -70,7 +70,7 @@ export default async function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
         <h3 className="text-lg font-bold mb-2 text-blue-500">Q: How can I sell my items on CollegeBay?</h3>
-        <p>A: To sell your items, simply click on the "Sell Your Item" button and follow the steps to add your product details.</p>
+        <p>A: To sell your items, simply click on the Sell Your Item button and follow the steps to add your product details.</p>
       </div>
       <div>
         <h3 className="text-lg font-bold mb-2 text-blue-500">Q: Is there a fee for listing items on CollegeBay?</h3>

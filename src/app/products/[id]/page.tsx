@@ -57,7 +57,7 @@ interface ProductPageProps {
     {/* New Section for Seller's Contact Information and Quantity */}
     <div className="bg-gray-400 p-6 rounded-lg">
       <h2 className="text-3xl font-bold text-gray-800">
-        Seller's Contact Information
+        Seller Contact Information
       </h2>
       <p className="text-lg text-gray-700">Contact Number: {product.contact}</p>
       <p className="text-lg text-gray-700">Email Address: {product.email}</p>
