@@ -40,6 +40,25 @@ Run the following command in the VS Code terminal .
  npm run dev
   ```
 
+## Prisma Deployment 
+Create MonogDB database and define the query field for your data.
+Run 
+```bash
+npx prisma init
+```
+Pull data from database 
+```bash
+npx prisma db pull
+```
+Replace < password > and < projectname > with your MongoDB password and projectname
+
+<img width="974" alt="Screenshot 2024-01-21 at 11 08 27 PM" src="https://github.com/vanshdhar999/College-ecommerce/assets/118869994/cc5a7ab6-3317-4dfb-a4b6-7ccd6e9fe890">
+
+```bash
+npx prisma generate
+```
+Run this command to generate Prisma Client 
+
 
 Go to http://localhost:3000 on your browser to view the result .
 
@@ -111,9 +130,13 @@ NEXTAUTH_SECRET: Put your NextAuth Secret here.
 [TypeScript](https://www.typescriptlang.org/docs/)
 
 [MongoDB](https://www.mongodb.com/docs/)
+
 [DaisyUI](https://daisyui.com/)
+
 [Node.js](https://nodejs.org/docs/latest/api/)
+
 [Prisma](https://www.prisma.io/docs)
+
 [NextAuth.js](https://next-auth.js.org/)
 
 
