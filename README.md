@@ -60,7 +60,7 @@ npx prisma generate
 ```
 
 
-## Environment Variables 
+## Environment Variables
 DATABASE_URL="..." // Put your Database URL here . 
 
 GOOGLE_CLIENT_ID = "..." // Put Google_Client_Id here .
