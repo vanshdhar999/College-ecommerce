@@ -79,13 +79,15 @@ export default async function AddProductPage() {
           type="number"
           className="input-bordered input mb-3 w-full"
         />
-        <input
+        <select
           required
           name="tag"
-          placeholder="Negotiable or Non-Negotiable"
-          type = "string"
           className="input-bordered input mb-3 w-full"
-        />
+        >
+          <option value="" disabled selected>Select Tag</option>
+          <option value="negotiable">Negotiable</option>
+          <option value="non-negotiable">Non-Negotiable</option>
+        </select>
         <input
           required
           name="contact"

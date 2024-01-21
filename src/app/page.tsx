@@ -1,47 +1,37 @@
+// Import necessary dependencies and components
 import ProductCard from "@/components/ProductCard";
 import prisma from "@/lib/db/prisma";
 import Image from "next/image";
 import Link from "next/link";
 
+// Define the Home component
 export default async function Home() {
   try {
+    // Fetch products from the database
     const products = await prisma.product.findMany({
       orderBy: { id: "desc" },
     });
 
+    // Return the JSX structure
     return (
       <div>
         {/* Header Section */}
-        <header className=" text-white p-4">
-          <div className="flex items-center justify-between">
-            {/* Left Section */}
-            {/* <div className="flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                width={40}
-                height={40}
-                className="mr-2"
-              />
-              <h1 className="text-2xl font-bold">CollegeBay</h1>
-            </div> */}
+        <header className="text-white p-4">
+          {/* Add the welcome text */}
+          <h1 className="text-center text-4xl font-bold mb-4 text-blue-500">Welcome to College Bay !</h1>
 
-            {/* Center Section - Search Bar */}
-
-            {/* Right Section */}
-            <div className=" gap-2 flex items-center">
-              {/* My Account Link */}
-              <Link href="/MyAccount" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                My Account
-              </Link>
-              {/* Sell Your Item Button */}
-              <Link href="/add-product" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                Sell Your Item
-              </Link>
-            </div>
+          <div className="flex flex-col items-center justify-center"> {/* Center the content */}
+            {/* Sell Your Item Button */}
+            <Link href="/add-product" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500 hover:bg-green-600 text-white mb-2"> {/* Style the button */}
+              Sell Your Item
+            </Link>
+            
+            {/* Subtitle */}
+            <p className="text-3xl text-center text-gray-400">Check Out these awesome deals from across your college.</p>
           </div>
         </header>
 
+        {/* Hero Section */}
         <div className="hero rounded-xl bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
             <Image
@@ -55,6 +45,7 @@ export default async function Home() {
             <div>
               <h1 className="text-5xl font-bold">{products[0].name}</h1>
               <p className="py-6">{products[0].description}</p>
+              <p className="text-white-500 font-bold">Brand New Item!</p>
               <Link
                 href={`/products/${products[0].id}`}
                 className="btn-primary btn"
@@ -65,6 +56,7 @@ export default async function Home() {
           </div>
         </div>
 
+        {/* Product Grid Section */}
         <div className="my-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {products.slice(1).map((product) => (
             <ProductCard product={product} key={product.id} />
