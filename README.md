@@ -52,7 +52,7 @@ npx prisma db pull
 ```
 Replace <password> and <projectname> with your MongoDB password and projectname
 
-<img width="977" alt="Screenshot 2024-01-21 at 10 55 53 PM" src="https://github.com/vanshdhar999/College-ecommerce/assets/118869994/05b0677d-4b62-499a-be80-b55a572d1fee">
+<img width="974" alt="Screenshot 2024-01-21 at 11 08 27 PM" src="https://github.com/vanshdhar999/College-ecommerce/assets/118869994/cc5a7ab6-3317-4dfb-a4b6-7ccd6e9fe890">
 
 ```bash
 npx prisma generate
