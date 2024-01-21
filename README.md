@@ -130,9 +130,13 @@ NEXTAUTH_SECRET: Put your NextAuth Secret here.
 [TypeScript](https://www.typescriptlang.org/docs/)
 
 [MongoDB](https://www.mongodb.com/docs/)
+
 [DaisyUI](https://daisyui.com/)
+
 [Node.js](https://nodejs.org/docs/latest/api/)
+
 [Prisma](https://www.prisma.io/docs)
+
 [NextAuth.js](https://next-auth.js.org/)
 
 
