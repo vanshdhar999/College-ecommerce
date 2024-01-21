@@ -50,7 +50,7 @@ Pull data from database
 ```bash
 npx prisma db pull
 ```
-Replace <password> and <projectname> with your MongoDB password and projectname
+Replace < password > and < projectname > with your MongoDB password and projectname
 
 <img width="974" alt="Screenshot 2024-01-21 at 11 08 27 PM" src="https://github.com/vanshdhar999/College-ecommerce/assets/118869994/cc5a7ab6-3317-4dfb-a4b6-7ccd6e9fe890">
 
