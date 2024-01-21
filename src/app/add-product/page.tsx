@@ -15,14 +15,18 @@ async function addProduct(formData: FormData) {
     const imageUrl = formData.get("imageUrl")?.toString();
     const price = Number(formData.get("price") || 0);
     const tag = formData.get("tag")?.toString();
+    const quantity = Number(formData.get("quantity"));
+    const email = formData.get("email")?.toString();
+    const contact = Number(formData.get("contact"));
 
 
-    if (!name || !description || !imageUrl || !price || !tag) {
+
+    if (!name || !description || !imageUrl || !price || !tag || !email || !contact || !quantity) {
         throw Error("Missing required fields");
       }
 
       await prisma.product.create({
-        data: { name, description, imageUrl, price, tag },
+        data: { name, description, imageUrl, price, tag, contact, email, quantity },
       });
     
       redirect("/");
@@ -30,8 +34,8 @@ async function addProduct(formData: FormData) {
 
 export default function AddProductPage() {
   return (
-    <div>
-      <h1 className="mb-3 text-lg font-bold">Add Product</h1>
+    <div className="text-center">
+      <h1 className=" text-4xl mb-3 font-bold"> Add Item Details</h1>
       <form action = {addProduct}>
         <input
           required
@@ -62,8 +66,29 @@ export default function AddProductPage() {
         {/* Add the Tag field with text input */}
         <input
           required
+          name="quantity"
+          placeholder= "Quantity"
+          type="number"
+          className="input-bordered input mb-3 w-full"
+        />
+        <input
+          required
           name="tag"
           placeholder="Negotiable or Non-Negotiable"
+          type = "string"
+          className="input-bordered input mb-3 w-full"
+        />
+        <input
+          required
+          name="contact"
+          placeholder= "Contact Number"
+          type="number"
+          className="input-bordered input mb-3 w-full"
+        />
+        <input
+          required
+          name="email"
+          placeholder="Email Address"
           type = "string"
           className="input-bordered input mb-3 w-full"
         />
