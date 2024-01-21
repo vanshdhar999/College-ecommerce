@@ -4,76 +4,77 @@ Empowering student communities through a unique e-commerce platform. Buy and sel
 
 ## App Setup (localhost)
 
-Install node.js compatible with your system from the website . 
+1. Install node.js compatible with your system from [the official website](https://nodejs.org/en/download) . 
+
+2. Install npm on your desktop from terminal .
 ```bash
- https://nodejs.org/en/download
+ npm install
   ```
 
-  Check the version of your node.js and npm on command prompt.
+
+ 3. Check the versions of Node.js and npm in the command prompt.
   
   ```bash
  node -v
 npm -v
   ```
-Getting output as below means you have succesfully installed node and npm .
-
-![App Screenshot](public/npm.png?text=App+Screenshot+Here)
 
 
-Open a Directory of your choice on the system and clone the Github repository via running the code on git-bash .
+
+4. Open a directory of your choice on your system and clone the GitHub repository using Git Bash.
 
 ```bash
  git clone https://github.com/vanshdhar999/College-ecommerce
   ```
-
-Looks like this while execution 
-
-
-![App Screenshot](public/glone.png?text=App+Screenshot+Here)
-
+5. Open the cloned folder in VS Code and run the following command in the terminal to install necessary packages.
+```bash
+ npm i daisyui prisma @prisma/client next-auth @auth/prisma-adapter prettier eslint-config-prettier prettier-plugin-tailwindcss
+  ```
 
 
-## Deployement 
-After cloning, open the folder in VS-Code and Run the following command
+
+## Deployment 
+Run the following command in the VS Code terminal .
+
 ```bash
  npm run dev
   ```
-Something like this will appear 
-
-![App Screenshot](public/host.png?text=App+Screenshot+Here)
 
 
-Go to http://localhost:3000 on your browser to see the result .
+Go to http://localhost:3000 on your browser to view the result .
 
 ## Environment Variables 
-DATABASE_URL="..." // Put your Database URL here . 
+Ensure to set the following environment variables:
 
-GOOGLE_CLIENT_ID = "..." // Put Google_Client_Id here .
+DATABASE_URL: Put your Database URL here.
 
-GOOGLE_CLIENT_SECRET = "..." // Put your Google_Client_Secret here
+GOOGLE_CLIENT_ID: Put your Google Client ID here.
 
-NEXTAUTH_URL = "..." // put your NextAuth URL here .
+GOOGLE_CLIENT_SECRET: Put your Google Client Secret here.
 
-NEXTAUTH_SECRET = "..." // put your NextAuth Secret here .
+NEXTAUTH_URL: Put your NextAuth URL here.
+
+NEXTAUTH_SECRET: Put your NextAuth Secret here.
+
 
 ## Features 
 
 
-1. User Authentication : Seamless Authentication of the user via OAuth .
+1. User Authentication : Seamless authentication via OAuth .
 
-2. User Management : The Data of Users is managed effortlessly on MongoDB , that is accessible from anywhere .
+2. User Management : Effortless management of user data stored on MongoDB .
 
-3. Responsive Design : Website works well on different desktop screen sizes. 
+3. Responsive Design : Ensures optimal performance on various desktop screen sizes. 
 
 
-4. Search Functionality: Search bar on the top is case insensitive and searches the underlying database .
-Ensure fast and efficient search performance, minimizing latency in delivering results.
+4. Search Functionality: Case-insensitive search bar efficiently queries the underlying database .
 
-5. Content Management: User can interact with the website and add items for sale on the website .
 
-6. Database Integration: MongoDB allows the admin to access database from anywhere . Fetching data from database is fast and efficient .
+5. Content Management: Users can interact with the website and add items for sale.
 
-7. API Integration: OAuth 2.0 from the Google API Console is integrated .
+6. Database Integration: MongoDB enables secure and efficient data retrieval.
+
+7. API Integration: Integration with Google API Console for OAuth 2.0 .
 
 
 
@@ -87,31 +88,45 @@ Ensure fast and efficient search performance, minimizing latency in delivering r
 
 ## Technologies Used
 
-Client side - Next.js , TailwindCSS , TypeScript , DaisyUI 
+### Client side 
+1. Next.js
+2. TailwindCSS
+3. TypeScript
+4. DaisyUI 
 
-Server side - Node.js , Prisma , TypeScript , MongoDB , NextAuth.js , OAuth Google
+### Server side 
+1. Node.js
+2. Prisma
+3. TypeScript
+4. MongoDB
+5. NextAuth.js
+6. OAuth Google
 
 ## Documentation
 
-Next.js - https://nextjs.org/docs
+[Next.js](https://nextjs.org/docs)
 
-TailwindCSS - https://v2.tailwindcss.com/docs
+[TailwindCSS](https://v2.tailwindcss.com/docs)
 
-TypeScript - https://www.typescriptlang.org/docs/
+[TypeScript](https://www.typescriptlang.org/docs/)
 
-MongoDB - https://www.mongodb.com/docs/
+[MongoDB](https://www.mongodb.com/docs/)
+[DaisyUI](https://daisyui.com/)
+[Node.js](https://nodejs.org/docs/latest/api/)
+[Prisma](https://www.prisma.io/docs)
+[NextAuth.js](https://next-auth.js.org/)
 
-DaisyUI - https://daisyui.com/
 
-Node.js - https://nodejs.org/docs/latest/api/
-
-Prisma - https://www.prisma.io/docs
-
-NextAuth.js - https://next-auth.js.org/
 
 OAuth Google - https://developers.google.com/identity/protocols/oauth2
 
-## feedback -- link
+## Feedback 
+For raising issues or contribution please connect through 
+
+1. 11avanshdhar@gmail.com
+2. bkiisc@gmail.com
+3. kanishkaman42@gmail.com
+4. saumysharan25@gmail.com
 
 
 
