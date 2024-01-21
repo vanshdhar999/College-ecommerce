@@ -12,10 +12,10 @@ export default async function Home() {
     return (
       <div>
         {/* Header Section */}
-        <header className="bg-primary text-white p-4">
+        <header className=" text-white p-4">
           <div className="flex items-center justify-between">
             {/* Left Section */}
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Logo"
@@ -24,30 +24,20 @@ export default async function Home() {
                 className="mr-2"
               />
               <h1 className="text-2xl font-bold">CollegeBay</h1>
-            </div>
+            </div> */}
 
             {/* Center Section - Search Bar */}
-            <div className="flex-grow flex items-center justify-center">
-              {/* Add your search bar component or form here */}
-              <input
-                type="text"
-                placeholder="Search..."
-                className="p-2 rounded-md"
-              />
-              {/* Additional search-related elements can be added here */}
-            </div>
 
             {/* Right Section */}
             <div className=" gap-2 flex items-center">
               {/* Login Button */}
               <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Login</button>
               {/* My Account Link */}
-              <Link href="/my-account" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+              <Link href="/MyAccount" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                 My Account
               </Link>
               {/* Sell Your Item Button */}
-              <Link href="/add-product"
-               className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+              <Link href="/add-product" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                 Sell Your Item
               </Link>
             </div>
@@ -82,6 +72,24 @@ export default async function Home() {
             <ProductCard product={product} key={product.id} />
           ))}
         </div>
+
+        {/* FAQ Section in the Footer */}
+        <footer className="bg-black-100 p-4 mt-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-2">
+              <div>
+                <h3 className="text-lg font-bold">Q: How can I sell my items on CollegeBay?</h3>
+                <p>A: To sell your items, simply click on the "Sell Your Item" button and follow the steps to add your product details.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Q: Is there a fee for listing items on CollegeBay?</h3>
+                <p>A: Listing your items on CollegeBay is currently free of charge.</p>
+              </div>
+              {/* Add more FAQ items as needed */}
+            </div>
+          </div>
+        </footer>
       </div>
     );
   } catch (error) {
