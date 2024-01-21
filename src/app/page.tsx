@@ -65,21 +65,26 @@ export default async function Home() {
 
         {/* FAQ Section in the Footer */}
         <footer className="bg-black-100 p-4 mt-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-            <div className="space-y-2">
-              <div>
-                <h3 className="text-lg font-bold">Q: How can I sell my items on CollegeBay?</h3>
-                <p>A: To sell your items, simply click on the "Sell Your Item" button and follow the steps to add your product details.</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">Q: Is there a fee for listing items on CollegeBay?</h3>
-                <p>A: Listing your items on CollegeBay is currently free of charge.</p>
-              </div>
-              {/* Add more FAQ items as needed */}
-            </div>
-          </div>
-        </footer>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-2xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h3 className="text-lg font-bold mb-2 text-blue-500">Q: How can I sell my items on CollegeBay?</h3>
+        <p>A: To sell your items, simply click on the "Sell Your Item" button and follow the steps to add your product details.</p>
+      </div>
+      <div>
+        <h3 className="text-lg font-bold mb-2 text-blue-500">Q: Is there a fee for listing items on CollegeBay?</h3>
+        <p>A: Listing your items on CollegeBay is currently free of charge.</p>
+      </div>
+      {/* Add more FAQ items as needed */}
+      <div>
+        <h3 className="text-lg font-bold mb-2 text-blue-500">Q: Do I have to Sign In before listing my item on the market?</h3>
+        <p>A: Yes, you have to.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
       </div>
     );
   } catch (error) {
