@@ -40,6 +40,25 @@ Run the following command in the VS Code terminal .
  npm run dev
   ```
 
+## Prisma Deployment 
+Create MonogDB database and define the query field for your data.
+Run 
+```bash
+npx prisma init
+```
+Pull data from database 
+```bash
+npx prisma db pull
+```
+Replace <password> and <projectname> with your MongoDB password and projectname
+
+<img width="977" alt="Screenshot 2024-01-21 at 10 55 53 PM" src="https://github.com/vanshdhar999/College-ecommerce/assets/118869994/05b0677d-4b62-499a-be80-b55a572d1fee">
+
+```bash
+npx prisma generate
+```
+Run this command to generate Prisma Client 
+
 
 Go to http://localhost:3000 on your browser to view the result .
 
