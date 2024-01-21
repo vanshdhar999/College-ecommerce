@@ -6,8 +6,8 @@ const nextConfig = {
         { hostname: "lh3.googleusercontent.com" },],
                         
     },
-    experimental: {
-        serverActions: true,
-    },
+    // experimental: {
+    //     serverActions: true,
+    // },
 };
 export default nextConfig;
