@@ -1,28 +1,19 @@
 export default function Footer() {
     return (
-      <footer className="bg-neutral p-10 text-neutral-content">
-        <div className="footer m-auto max-w-7xl">
-          <div>
-            <span className="footer-title">Services</span>
-            <a className="link-hover link">Branding</a>
-            <a className="link-hover link">Design</a>
-            <a className="link-hover link">Marketing</a>
-            <a className="link-hover link">Advertisement</a>
+      <footer className="bg-gray-800 text-white py-6">
+        <div className="container mx-auto flex flex-col items-center justify-between">
+          <div className="flex space-x-4">
+            <span className="text-lg font-bold"><a href="https://iisc.ac.in" className="text-blue-400 hover:text-blue-300">College</a></span>
+            <a href="#" className="text-gray-300 hover:text-gray-200">About us</a>
+            <a href="#" className="text-gray-300 hover:text-gray-200">Contact</a>
           </div>
-          <div>
-            <span className="footer-title">Company</span>
-            <a className="link-hover link">About us</a>
-            <a className="link-hover link">Contact</a>
-            <a className="link-hover link">Jobs</a>
-            <a className="link-hover link">Press kit</a>
-          </div>
-          <div>
-            <span className="footer-title">Legal</span>
-            <a className="link-hover link">Terms of use</a>
-            <a className="link-hover link">Privacy policy</a>
-            <a className="link-hover link">Cookie policy</a>
+          <div className="flex flex-col items-center space-y-4">
+            <div className="text-center text-gray-300">
+              <p>@ Copyright MegaByte_Mavericks 2024</p>
+            </div>
           </div>
         </div>
       </footer>
     );
   }
+  
