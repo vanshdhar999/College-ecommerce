@@ -52,7 +52,7 @@ interface ProductPageProps {
     <h1 className="text-5xl font-bold">{product.name}</h1>
     <PriceTag price={product.price} className="mt-4" />
     <h1 className="text-2xl text-gray-600"> {product.tag}</h1>
-    <p className="py-6 text-lg text-white-400"><h2 className="text-3xl ">Product Description</h2>{product.description}</p>
+    <p className="py-6 text-lg text-white-400">{product.description}</p>
 
     {/* New Section for Seller's Contact Information and Quantity */}
     <div className="bg-gray-400 p-6 rounded-lg">
