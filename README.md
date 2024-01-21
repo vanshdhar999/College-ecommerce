@@ -45,7 +45,7 @@ Something like this will appear
 
 Go to http://localhost:3000 on your browser to see the result .
 
-#Prisma Setup
+## Prisma Setup
 run npx prisma init after setting up your MongoDB database 
 ```bash
 npx prisma init
@@ -54,6 +54,11 @@ To pull or push yyour queries from database into your local machine run
 ```bash
 npx prisma db pull/push
 ```
+You need to run to generate the Prisma Client.
+```bash
+npx prisma generate
+```
+
 
 ## Environment Variables 
 DATABASE_URL="..." // Put your Database URL here . 
