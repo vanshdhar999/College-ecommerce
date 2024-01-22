@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from '@/lib/AuthOptions';
 import UserMenuButton from "./UserMenuButton";
 
 async function searchProducts(formData: FormData) {
