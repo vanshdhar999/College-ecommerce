@@ -1,16 +1,21 @@
+import Link from "next/link";
 export default function Footer() {
     return (
-      <footer className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto flex flex-col items-center justify-between">
-          <div className="flex space-x-4">
-            <span className="text-lg font-bold"><a href="https://iisc.ac.in" className="text-blue-400 hover:text-blue-300">College</a></span>
-            <a href="#" className="text-gray-300 hover:text-gray-200">About us</a>
-            <a href="#" className="text-gray-300 hover:text-gray-200">Contact</a>
+      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+        <aside>
+    <p>Copyright © 2024 - All right reserved by MegaByte_Mavericks Team</p>
+  </aside>
+
+        <div className="flex items-center justify-center space-x-4">
+            {/* <h2 className="text-2xl font-bold mb-4 text-white">About Us</h2> */}
+        <Link href="/team-profile" passHref
+          className= "rounded-full bg-gray-700 p-2">About Us
+        </Link>
+          <div className="rounded-full bg-gray-700 p-2">
+            <a target = "_blank" href = "https://iisc.ac.in" className="text-sm">College</a>
           </div>
-          <div className="flex flex-col items-center space-y-4">
-            <div className="text-center text-gray-300">
-              <p>@ Copyright MegaByte_Mavericks 2024</p>
-            </div>
+          <div className="rounded-full bg-gray-700 p-2">
+            <a href="https://github.com/vanshdhar999/College-ecommerce" className="text-sm" target="_blank" rel="noopener noreferrer">Github</a>
           </div>
         </div>
       </footer>

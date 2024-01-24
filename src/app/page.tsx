@@ -1,8 +1,11 @@
 // Import necessary dependencies and components
 import ProductCard from "@/components/ProductCard";
+import ThemeToggle from "@/components/ThemeToggle";
 import prisma from "@/lib/db/prisma";
 import Image from "next/image";
 import Link from "next/link";
+
+
 
 // Define the Home component
 export default async function Home() {
@@ -15,6 +18,7 @@ export default async function Home() {
     // Return the JSX structure
     return (
       <div>
+        <ThemeToggle/>
         {/* Header Section */}
         <header className="text-white p-4">
           {/* Add the welcome text */}
@@ -27,7 +31,7 @@ export default async function Home() {
             </Link>
             
             {/* Subtitle */}
-            <p className="text-3xl text-center text-gray-400">Check Out these awesome deals from across your college.</p>
+            {/* <p className="text-3xl text-center text-gray-400">Find what you are looking for.</p> */}
           </div>
         </header>
 
@@ -43,9 +47,7 @@ export default async function Home() {
               priority
             />
             <div>
-              <h1 className="text-5xl font-bold">{products[0].name}</h1>
-              <p className="py-6">{products[0].description}</p>
-              <p className="text-white-500 font-bold">Brand New Item!</p>
+              <h1 className="text-5xl font-bold mt-4">{products[0].name}</h1>
               <Link
                 href={`/products/${products[0].id}`}
                 className="btn-primary btn"
