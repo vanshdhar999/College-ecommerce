@@ -1,5 +1,6 @@
 import prisma from "@/lib/db/prisma"
 import ProductCard from "@/components/ProductCard"
+import SearchProduct from "@/components/SearchProduct"
 import { Metadata } from "next"
 
 interface SearchPageProps {
@@ -38,7 +39,7 @@ export default async function SearchPage({searchParams : {query}}: SearchPagePro
 
         <div>
             {products.map(product => (
-                <ProductCard product = {product} key={product.id}/>
+                <SearchProduct product = {product} key={product.id}/>
             ))}
         </div>
     )
