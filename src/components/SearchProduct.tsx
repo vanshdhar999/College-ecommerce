@@ -16,7 +16,7 @@ export default function ProductCard({product}: ProductCardProps) {
 
     return(
         <Link href={"/products/" + product.id}
-             className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:shadow-md transition-shadow">
+             className=" bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:shadow-md transition-shadow">
                 <figure>
 
                     <Image 
@@ -24,7 +24,7 @@ export default function ProductCard({product}: ProductCardProps) {
                      alt = {product.name}
                      width = {600}
                      height={400}
-                     className="h-48 object-cover"
+                     className="place-content-center h-48 object-contain"
                      />
                 </figure>
                 <div className="card-body text-white">
